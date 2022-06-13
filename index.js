@@ -1,14 +1,13 @@
-function saturdayFun(activityy = 'roller-skate'){
-    return"This Saturday, I want to " +activityy+"!"
+function saturdayFun(done = 'roller-skate'){
+    return`This Saturday, I want to ${done}!`
 }
 
-function mondayWork(activityyy = 'go to the 0ffice'){
-    return 'This Monday, I will ' +activityyy+"."
+let mondayWork= function (done ="go to the office"){
+    return `This Monday, I will ${done}.`
 }
 
-function wrapAdjective(adjective){
-    function special(receive){
-        return `you are `+ adjective + receive + adjective+"!"
+let wrapAdjective = function(drop="*"){
+    return function (adject="Good"){
+        return `You are ${drop}${adject}${drop}!`
     }
-    return special
-}
+    }
